@@ -1,9 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Josefin Sans', sans-serif;
-    box-sizing: border-box;
-}
+
 
 
 .background{
@@ -12,7 +7,6 @@
     background-position: center;
     height: 100vh;
     width: 100%;
-
 }
 
 nav{
