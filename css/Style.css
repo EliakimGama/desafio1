@@ -1,70 +1,106 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Josefin Sans', sans-  serif;
-    box-sizing: border-box; 
+/* geral */
+html {
+	font-family: 'Open Sans', sans-serif;
 }
-
-body {margin: 0;
-
-}
-
-/*
+/* background */
 .background{
-    background-image: url(background.png);
+    background-image: url("../image/background.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
-}*/
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
-    border-bottom: 1px solid #ccc;
 }
 
-
-nav ul li{
-    display: inline-block;
-    padding: 20px 35px;
-    list-style-type: none;
+body {
+	margin: 0;
 }
 
-nav ul li a{
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
+.container {
+	max-width: 1920px;
+	width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-nav ul li a:hover{
-    color: #3381f3;
+/* hide on desktop */
+.nav-container .btn-menumobile {
+	display: none;
 }
 
-nav h1{
-    color: rgb(121, 13, 13);
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 40px;
-}
-
+/* header */
 header {
-    position: relative;
-    top:0
-    height: auto;
-    width: 100%;
+	position: relative;
+	top: 0;
+	height: auto;
+	width: 100%;
 }
 
-.background{
-    background: url('../image/background.png')no-repeat;
-    background-size: cover;
-    background-position: 0 55%;
-    position: relative;
-    margin-top:100px
+/* navbar */
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+	background-color: #FFF;
+	border-bottom: 1px solid #CCC;
 }
+
+nav:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.nav-container {
+	max-width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo {
+	width: 60px;
+	height: 70px;
+	margin-top: 25px;
+}
+
+.nav-container ul {
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+}
+/* estilos dos links */
+.nav-container ul li {
+	list-style: none;
+	float: left;
+	margin: 0 15px;
+}
+
+.nav-container li a {
+	text-decoration: none;
+	color: #666;
+	transition: .5s;
+}
+
+.nav-container li a:hover {
+	color: #3381f3;
+}
+
+/* banner */
+#main-banner {
+	background: url('../image/background.png') no-repeat;
+	background-size: cover;
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 100px;
+}
+
+/*texto da página principal*/
+.nav-container section{
+	color: #fff;
+}
+
