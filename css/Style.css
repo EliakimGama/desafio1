@@ -15,7 +15,6 @@ body {margin: 0;
     background-position: center;
     height: 100vh;
     width: 100%;
-
 }
 
 nav{
@@ -25,12 +24,10 @@ nav{
     padding: 45px;
     padding-left: 8%;
     padding-right: 8%;
+    border-bottom: 1px solid #ccc;
 }
 
-.container{
-    max-width: 1920px;
-    width: 100%;
-}
+
 nav ul li{
     display: inline-block;
     padding: 20px 35px;
@@ -38,15 +35,35 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-nav h2{
-    color: #fff;
+nav ul li a:hover{
+    color: #3381f3;
+}
+
+nav h1{
+    color: rgb(121, 13, 13);
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
+    font-size: 40px;
+}
+
+header {
+    position: relative;
+    top:0
+    height: auto;
+    width: 100%;
+}
+
+#main-banner {
+    background: url('../image/background.png')no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    position: relative;
+    margin-top:100px
 }
