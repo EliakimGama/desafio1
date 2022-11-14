@@ -80,6 +80,7 @@ nav:after {
 	margin: 0 15px;
 }
 
+
 .nav-container li a {
 	text-decoration: none;
 	color: #666;
@@ -99,8 +100,86 @@ nav:after {
 	margin-top: 100px;
 }
 
-/*texto da página principal*/
-.nav-container section{
-	color: #fff;
+/* footer */
+footer {
+	background-color: #fff;
+	padding: 5em 0;
+	padding-bottom: 40px;
+	border-top: 5px solid #3381f3;
 }
 
+footer h2, footer p, footer a, footer span {
+	color: #D1D1D1;
+}
+
+footer h2 {
+	font-weight: 400;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer ul {
+	padding: 0;
+}
+
+footer li {
+	list-style: none;
+}
+
+.footer-box {
+	width: 31%;
+	padding: 1%;
+	float: left;
+}
+
+footer .wrapper:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+
+
+
+
+
+
+.footer-list a {
+	transition: 0.5s;
+}
+
+.footer-list a:hover {
+	color: rgb(51, 6, 253);
+}
+
+
+
+
+
+.footer-list.footer-article-list span {
+	display: block;
+	float: none;
+}
+
+.fab {
+	font-size: 30px;
+	margin-right: 10px;
+	float: left;
+}
+
+.footer-list li span {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.footer-bottom {
+	border-top: 1px solid #B2B2B2;
+}
+
+.footer-bottom p {
+	font-weight: 600;
+	margin-top: 40px;
+}
