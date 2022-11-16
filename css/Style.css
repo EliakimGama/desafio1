@@ -11,6 +11,8 @@ html {
     width: 100%;
 }
 
+
+
 body {
 	margin: 0;
 }
@@ -100,20 +102,20 @@ nav:after {
 	margin-top: 100px;
 }
 
-/* footer */
+/*-------------Início rodapé----------------*/
 footer {
 	background-color: #fff;
 	padding: 5em 0;
-	padding-bottom: 40px;
-	border-top: 5px solid #3381f3;
+	padding-bottom: 20px;
+	border-top: 5px solid #700303;
 }
 
 footer h2, footer p, footer a, footer span {
-	color: #D1D1D1;
+	color: #5a0105;
 }
 
 footer h2 {
-	font-weight: 400;
+	font-weight: 100;
 }
 
 footer a {
@@ -129,7 +131,7 @@ footer li {
 }
 
 .footer-box {
-	width: 31%;
+	width: 20%;
 	padding: 1%;
 	float: left;
 }
@@ -140,12 +142,6 @@ footer .wrapper:after {
 	display: block;
 }
 
-
-
-
-
-
-
 .footer-list a {
 	transition: 0.5s;
 }
@@ -153,11 +149,6 @@ footer .wrapper:after {
 .footer-list a:hover {
 	color: rgb(51, 6, 253);
 }
-
-
-
-
-
 .footer-list.footer-article-list span {
 	display: block;
 	float: none;
@@ -165,12 +156,12 @@ footer .wrapper:after {
 
 .fab {
 	font-size: 30px;
-	margin-right: 10px;
+	margin-right: 5px;
 	float: left;
 }
 
 .footer-list li span {
-	float: left;
+	float: center;
 	height: 30px;
 	line-height: 30px;
 }
@@ -180,6 +171,50 @@ footer .wrapper:after {
 }
 
 .footer-bottom p {
+	position: left;
 	font-weight: 600;
-	margin-top: 40px;
+	margin-top: 20px;
+}
+/*-------------Fim rodapé----------------*/
+
+
+/* send jobs container */
+#sendjobs-container {
+	background: url('../image/background.png') no-repeat;
+	background-size: cover;
+	background-position: 0 25%;
+	padding: 15em 0;
+}
+
+#sendjobs-container h2, #sendjobs-container p {
+	width: 600px;
+	color: #FFF;
+}
+
+#sendjobs-container h2 {
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+#sendjobs-container p {
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+
+
+
+/*-------------texto da página----------------*/
+#sendjobs-container h2, #sendjobs-container p {
+	width: 600px;
+	color: #FFF;
+}
+
+#sendjobs-container h2 {
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+#sendjobs-container p {
+	font-size: 18px;
+	margin-bottom: 50px;
 }
