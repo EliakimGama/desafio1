@@ -97,9 +97,17 @@ nav:after {
 }
 
 
-/* send jobs container */
-#sendjobs-container {
+/* pagina inicial*/
+#inicial {
 	background: url('../image/background.jpg') no-repeat;
+	background-size: cover;
+	background-position: 0 25%;
+	padding: 15em 0;
+}
+
+/* formação */
+#formacao {
+	background: url('../image/formacao.png') no-repeat;
 	background-size: cover;
 	background-position: 0 25%;
 	padding: 15em 0;
