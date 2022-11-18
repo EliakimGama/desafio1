@@ -135,12 +135,26 @@ iframe {
 	padding: 15em 0;
 }
 
-.mensagem{
-	width:500px;
-  }
+.contatos{
+	position: center;
+	width: 800px;
+	font-size: medium;
+}
+
+.contatos > div > input{
+	position: center;
+	width: 800px;
+	font-size: large;
+}
+
+.contatos > div > textarea{
+	position: center;
+	width: 800px;
+	font-size: large;
+}
 
 .titulocontato{
-	color: red;
+	color: rgb(87, 3, 3);
 	text-align: center;
   }
 
@@ -224,4 +238,26 @@ footer h6{
     color: rgb(75, 0, 0);
     height: 10px;
 	margin-top: 0;
+}
+
+.cor_inicio{
+	background-color: rgb(217, 206, 255);
+}
+.cor_formacao{
+	background-color: rgb(217, 206, 255);
+}
+.cor_contato{
+	background-color: rgb(217, 206, 255);
+}
+.cor_atuacao{
+	background-color: rgb(217, 206, 255);
+}
+.cor_descricao_tec{
+	background-color: rgb(217, 206, 255);
+}
+.cor_portifolio{
+	background-color: rgb(217, 206, 255);
+}
+.cor_sobremim{
+	background-color: rgb(217, 206, 255);
 }
