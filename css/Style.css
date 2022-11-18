@@ -19,8 +19,7 @@ h1, h2, h3, h4, h5, p, span {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-  
+ 
 /* hide on desktop */
 .nav-container .btn-menumobile {
 	display: none;
@@ -34,7 +33,7 @@ header {
 	width: 100%;
 }
 
-/* navbar */
+/* ---------------------menu---------------------*/
 nav {
 	position: fixed;
 	top: 0;
@@ -91,9 +90,9 @@ nav:after {
 .nav-container li a:focus {
 	background-color: #bb2222;
 }
+/*-----------------FIM MENU---------------------------*/
 
-
-/*texto da página*/
+/*--------------texto da página------------*/
 .wrapper{
 	max-width: 1200px;
 	position: relative;
@@ -101,7 +100,15 @@ nav:after {
 	margin-right: auto;
 }
 
-/*Página do lattes*/
+/*----------texto da página contatos----------*/
+.contatos{
+	max-width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*-----------Página do lattes-------------*/
 iframe {        
     position: relative;            
     top: 100px;
@@ -119,7 +126,26 @@ iframe {
 	padding: 15em 0;
 }
 
-/* formação */
+
+/* ------------PÁGINA CONTATO--------------*/
+#contato {
+	background: url('../image/contato.jpg') no-repeat;
+	background-size: cover;
+	background-position: 0 25%;
+	padding: 15em 0;
+}
+
+.mensagem{
+	width:500px;
+  }
+
+.titulocontato{
+	color: red;
+	text-align: center;
+  }
+
+
+/*------------PÁGINA FORMAÇÃO ------------------*/
 #formacao {
 	background: url('http://lattes.cnpq.br/1037526400123510') no-repeat;
 	background-size: cover;
@@ -154,24 +180,8 @@ iframe {
 	transition: 0.5s;
 }
 
-footer{
-    position: relative;
-    width: 100%;
-    height: 150px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-footer h6{
-    font-size: 20px;
-    color: rgb(75, 0, 0);
-    height: 10px;
-	margin-top: 0;
-}
-
+/*--------------RODAPÉ-------------*/
 .Redes-sociais{
     display: flex;
 }
@@ -195,4 +205,23 @@ footer h6{
 .Redes-sociais a:hover{
     transform: scale(1.2);
     transition: .3s;
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h6{
+    font-size: 20px;
+    color: rgb(75, 0, 0);
+    height: 10px;
+	margin-top: 0;
 }
