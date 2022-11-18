@@ -141,16 +141,27 @@ iframe {
 	font-size: medium;
 }
 
-.contatos > div > input{
+.contatos > div {
 	position: center;
 	width: 800px;
 	font-size: large;
+	
+}
+.contatos > div > input{
+	position: center;
+	width: 600px;
+	font-size: large;
+	margin: 5px;
+	margin-top: 20px;
+	
 }
 
 .contatos > div > textarea{
 	position: center;
 	width: 800px;
 	font-size: large;
+	margin: 1%;
+	margin-top: 2%;
 }
 
 .titulocontato{
@@ -158,6 +169,16 @@ iframe {
 	text-align: center;
   }
 
+button{
+	width: 200px;
+	border-radius: 10px;
+	background-color: #4b0303;
+	height: 50px;
+	color: #FFF;
+	font-size: larger;
+	
+	margin-top: 15px;
+}
 
 /*------------PÁGINA FORMAÇÃO ------------------*/
 #formacao {
