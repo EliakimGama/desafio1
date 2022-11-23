@@ -237,14 +237,14 @@ button{
 
 .Redes-sociais a{
     background-color: #380000;
-    width: 30px;
+    width: 10px;
     height: 30px;
-    padding: 15px;
+    padding: 20px;
     border-radius: 50%;
     margin: 1px 10px;
     color: #fff;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -260,7 +260,7 @@ button{
 footer{
     position: relative;
     width: 100%;
-    height: 150px;
+    height: 80px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -268,12 +268,7 @@ footer{
     justify-content: center;
 }
 
-footer h6{
-    font-size: 20px;
-    color: rgb(75, 0, 0);
-    height: 10px;
-	margin-top: 0;
-}
+
 
 .cor_inicio{
 	background-color: rgb(238, 190, 190);
@@ -295,4 +290,14 @@ footer h6{
 }
 .cor_sobremim{
 	background-color: rgb(238, 190, 190);
+}
+
+section div table{
+	background-color: #610e0e;
+	-webkit-text-fill-color: #ffffff;
+	top: 150px;
+	max-width: 600px;
+	position: fixed;
+	margin-left: 20px;
+	margin-right: auto;
 }
