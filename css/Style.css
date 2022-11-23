@@ -59,9 +59,9 @@ nav:after {
 }
 
 #logo {
-	width: 60px;
-	height: 70px;
-	margin-top: 25px;
+	width: 150px;
+	height: 20px;
+	margin-top: 50px;
 }
 
 .nav-container ul {
@@ -126,10 +126,24 @@ iframe {
 	padding: 15em 0;
 }
 
+#sobremim {
+	background: url('../image/background.jpg') no-repeat;
+	background-size: cover;
+	background-position: 0 25%;
+	padding: 15em 0;
+}
+
 
 /* ------------PÁGINA CONTATO--------------*/
 #contato {
 	background: url('../image/contato.jpg') no-repeat;
+	background-size: cover;
+	background-position: 0 25%;
+	padding: 15em 0;
+}
+
+#atuacao {
+	background: url('../image/background.png') no-repeat;
 	background-size: cover;
 	background-position: 0 25%;
 	padding: 15em 0;
