@@ -149,49 +149,44 @@ iframe {
 	padding: 15em 0;
 }
 
-.contatos{
+/*--------------Contatos-------------*/
+.contatos {
+	padding: 5px;
+	margin-top: 20px;
 	position: center;
-	width: 800px;
+	width: 500px;
 	font-size: medium;
 }
 
-.contatos > div {
-	position: center;
-	width: 800px;
-	font-size: large;
-	
-}
-.contatos > div > input{
-	position: center;
-	width: 600px;
-	font-size: large;
-	margin: 5px;
+.mensagem{
 	margin-top: 20px;
-	
+	position: center;
+	width: 500px;
+	font-size: medium;
 }
 
-.contatos > div > textarea{
-	position: center;
-	width: 800px;
-	font-size: large;
-	margin: 1%;
-	margin-top: 2%;
-}
 
 .titulocontato{
 	color: rgb(87, 3, 3);
+	margin-top: -100px;
 	text-align: center;
   }
 
-button{
-	width: 200px;
+
+.btn{
+	position: relative;
+	width: 100px;
 	border-radius: 10px;
 	background-color: #4b0303;
 	height: 50px;
 	color: #FFF;
 	font-size: larger;
-	
 	margin-top: 15px;
+}
+
+.bnt:hover{
+	background-color: #0e832b;
+	color: #e20606;
 }
 
 /*------------PÁGINA FORMAÇÃO ------------------*/
@@ -301,3 +296,4 @@ section div table{
 	margin-left: 20px;
 	margin-right: auto;
 }
+
