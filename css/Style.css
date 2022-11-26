@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, p, span {
 }
  
 /* hide on desktop */
-.nav-container .btn-menumobile {
+.nav-container i{
 	display: none;
 }
 
@@ -34,6 +34,10 @@ header {
 }
 
 /* ---------------------menu---------------------*/
+/*.nav-container i{
+	display: none;
+}*/
+
 nav {
 	position: fixed;
 	top: 0;
@@ -125,6 +129,12 @@ iframe {
 	background-position: 0 25%;
 	padding: 15em 0;
 }
+#atuacao{
+	background: url('../image/atuacao.jpg') no-repeat;
+	background-size: cover;
+	background-position: 0 25%;
+	padding: 15em 0;
+}
 
 #sobremim {
 	background: url('../image/background.jpg') no-repeat;
@@ -142,12 +152,7 @@ iframe {
 	padding: 15em 0;
 }
 
-#atuacao {
-	background: url('../image/atuacao.jpg') no-repeat;
-	background-size: cover;
-	background-position: 0 25%;
-	padding: 15em 0;
-}
+
 
 /*--------------Contatos-------------*/
 .contatos {
@@ -202,15 +207,6 @@ iframe {
 	color: #FFF;
 }
 
-#sendjobs-container h2 {
-	font-size: 36px;
-	margin-bottom: 50px;
-}
-
-#sendjobs-container p {
-	font-size: 18px;
-	margin-bottom: 50px;
-}
 
 .light-btn {
 	background-color: #FFF;
@@ -251,7 +247,6 @@ iframe {
     transition: .3s;
 }
 
-
 footer{
     position: relative;
     width: 100%;
@@ -264,7 +259,7 @@ footer{
 }
 
 
-
+/*--------------COR DE MARCAÇÃO DO MENU-------------*/
 .cor_inicio{
 	background-color: rgb(238, 190, 190);
 }
@@ -297,6 +292,68 @@ section div table{
 	margin-right: auto;
 }
 
-.card-group{
-	margin-top: 100px;
+/*-------------------RESPONSIVO----------------*/
+
+@media screen and (max-width:1024px){
+	#logo{
+		position: absolute;
+		left: 50px;
+	}
+	.nav-container ul{
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+
+	.nav-container ul li{
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		display: inline-block;
+		margin-top: 0 10px;
+	}
+
+	html, body {
+		overflow-x: hidden;
+	}
+	nav{
+			height: 4em;
+	}
+	/*.nav-container i {
+		display: block !important;
+	}
+
+	.nav-container i {
+		display: block;
+		font-size: 1.75em;
+		color: rgb(94, 3, 3);
+		position: absolute;
+		right: 1.5em;
+		top: .75em;
+	}
+*/
+	.nav-container ul{
+		position: relative;
+		top: 4em;
+		height: 3em;
+		line-height: 3em;
+		display: none;
+	}
+
+	.nav-container li{
+		display: block;
+		background-color: #fff;
+		margin: 0;
+		border-top: 1px slid #ccc;
+
+	}
+	.nav-container ul li a {
+		font-size: 1em;
+	}
+
+	.open{
+		display: block !important;
+
+	}
 }
