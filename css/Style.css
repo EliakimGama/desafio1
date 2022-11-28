@@ -21,7 +21,7 @@ h1,h2, h3, h4, h5, p, span {
 	block-size: 500px;
 
 }
-#main-banner2 {
+#classe_sobremim {
 	background: url('../image/background.jpg') no-repeat;
 	background-size: cover;
 	background-position: 0 55%;
@@ -53,9 +53,9 @@ h1,h2, h3, h4, h5, p, span {
 }
 
 .container2 h1{
-	width: 600px;
+	width: 500px;
 	position: fixed;
-	
+		
 }
 
 .elemento{
@@ -65,6 +65,7 @@ h1,h2, h3, h4, h5, p, span {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	margin-top: -100px;
 }
 
 .textosobremim{
@@ -81,10 +82,6 @@ h1,h2, h3, h4, h5, p, span {
 	text-align: justify;
 	color: #FFF;
 }
-
-
-
-
 
 
 /* header */
@@ -155,9 +152,6 @@ nav:after {
 	color: #e20606;
 }
 
-.nav-container li a:focus {
-	background-color: #bb2222;
-}
 /*-----------------FIM MENU---------------------------*/
 
 /*-----------Página do lattes-------------*/
@@ -172,12 +166,7 @@ nav:after {
 	background-position: 0 25%;
 	padding: 15em 0;
 }
-#atuacao{
-	background: url('../image/atuacao.jpg') no-repeat;
-	background-size: cover;
-	background-position: 0 25%;
-	padding: 15em 0;
-}
+
 
 
 /* ------------PÁGINA CONTATO--------------*/
@@ -231,27 +220,6 @@ nav:after {
 	color: #e20606;
 }
 
-/*------------PÁGINA FORMAÇÃO ------------------*/
-#formacao {
-	background: url('http://lattes.cnpq.br/1037526400123510') no-repeat;
-	background-size: cover;
-	background-position: 0 25%;
-	padding: 15em 0;
-}
-
-
-.light-btn {
-	background-color: #FFF;
-	border: 2px solid #FFF;
-	color: #666;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding: 10px 20px;
-	text-decoration: none;
-	border-radius: 5px;
-	transition: 0.5s;
-}
-
 /*--------------RODAPÉ-------------*/
 footer{
     position: relative;
@@ -294,26 +262,25 @@ footer{
 
 /*--------------COR DE MARCAÇÃO DO MENU-------------*/
 .cor_inicio{
-	background-color: rgb(238, 190, 190);
-	
+	font-weight: bold;
 }
 .cor_formacao{
-	background-color: rgb(238, 190, 190);
+	font-weight: bold;
 }
 .cor_contato{
-	background-color: rgb(238, 190, 190);
+	font-weight: bold;
 }
 .cor_atuacao{
-	background-color: rgb(238, 190, 190);
+	font-weight: bold;
 }
 .cor_descricao_tec{
-	background-color: rgb(238, 190, 190);
+	font-weight: bold;
 }
 .cor_portfolio{
-	background-color: rgb(238, 190, 190);
+	font-weight: bold;
 }
 .cor_sobremim{
-	background-color: rgb(238, 190, 190);
+	font-weight: bold;
 }
 
 
@@ -358,7 +325,7 @@ footer{
 		top: .75em;
 	}
 
-	.nav-container ul{
+	.nav-container ul {
 		position: relative;
 		top: 4em;
 		height: 3em;
@@ -366,13 +333,13 @@ footer{
 		display: none;
 	}
 
-	.nav-container ul li{
-		display: block;
-		background-color: #fff;
+	.nav-container ul li {
+		line-break: inherit;
+		background-color: #FFF;
 		margin: 0;
-		border-top: 1px slid #ccc;
-
+		border-top: 1px solid #CCC;
 	}
+
 	.nav-container ul li a {
 		font-size: 1em;
 	}
@@ -397,11 +364,20 @@ footer{
 		margin-top: 60px;
 		height: 500px;
 	}
+
+	.contatos {
+		width: 300px;
+	}
+	
+	.mensagem{
+		width: 300px;
+	}
 }
 
 .card-group{
-	margin-top: 120px;
-	
+	margin-top: 110px;	
 }
 
-
+.card-img-top{
+	margin-top: 100px;
+}
