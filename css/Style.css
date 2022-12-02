@@ -179,7 +179,7 @@ nav:after {
 
 .contatos {
 	padding: 5px;
-	margin-top: 20px;
+	margin-top: 10px;
 	position: center;
 	width: 500px;
 	font-size: medium;
@@ -215,8 +215,22 @@ nav:after {
 	margin-top: 15px;
 }
 
+.btn-primary{
+
+	width: 220px;
+	border-radius: 10px;
+	background-color: #910505;
+	height: 50px;
+	color: #FFF;
+	font-size: larger;
+	margin-top: 15px;
+	border: none;
+}
+
 .bnt:hover{
-	background-color: #0e832b;
+	background-color: #e20606;
+}
+.bnt2 button:hover{
 	color: #e20606;
 }
 
