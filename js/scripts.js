@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+/*$( document ).ready(function() {
    
 	var btnMenuMobile = $('.fa-bars');
 
@@ -8,25 +8,36 @@ $( document ).ready(function() {
 
 	});
 
-});
+});*/
 
-function mensagens(){
-	var nomePessoa = document.getElementById("nome");
-	var emailPessoa = document.getElementById("email");
-	var mensagemPessoa = document.getElementById("menaagem");
+var arr = [];
+ 
+function addItem(){
+   if (localStorage.meuArr){             
+	  arr = JSON.parse(localStorage.getItem('meuArr')); 
+   }
+   
+   let novoItem = document.getElementById("nomes").value;
+   arr.push(novoItem);
+   document.getElementById("nomes").value = "";
+   localStorage.meuArr = JSON.stringify(arr);
+}
 
-	var dados = JSON.parse(localStorage.getItem("dadosMensagens"));
+function showItems(){
+   let resultDIV = document.getElementById('d');
+   resultDIV.innerHTML = "";
+   if (localStorage.meuArr){             
+	  arr = JSON.parse(localStorage.getItem('meuArr')); 
+   }
+   
+   for(var i in arr){
+	  let p = document.createElement("p");
+	  p.innerHTML = arr[i];
+	  resultDIV.append(p);
+   }
+}
 
-	if(dados == null){
-		localStorage.setItem("dadosMensagens", "[]");
-		dados =[];
-	}
-	var auxRegistro = {
-		nome: nomePessoa.value,
-		email: emailPessoa.value,
-		mensagem: mensagemPessoa.value
-	}
-	dados.push(auxRegistro);
-
-	localStorage.setItem("dadosMensagens", JSON.stringify(dados));
+function clearItems(){
+   arr = [];
+   localStorage.meuArr = JSON.stringify(arr);   
 }
