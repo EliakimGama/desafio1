@@ -35,18 +35,32 @@ function criaElemento(item){
     const novoItem = document.createElement('li')
     novoItem.classList.add("item")
 
+    const nome= document.createElement('nome')
+    nome.innerText = ("Nome: ")
+
+    const mensagem = document.createElement('mensagem2')
+    mensagem.innerText = ("Mensagem: ")
+
+    const email= document.createElement('email')
+    email.innerText = ("Email:  ")
+
+    const espaco= document.createElement('espaco')
+    espaco.innerText = ("--------------")
+
     const numeroItem = document.createElement('strong')
     numeroItem.innerHTML = item.nome_usuario
-   
+
     numeroItem.dataset.id = item.id
     novoItem.appendChild(numeroItem)
   
     
-    novoItem.innerHTML += item.email_usuario += item.msg_usuario
+    nome.innerHTML += novoItem.innerHTML += espaco.innerHTML += email.innerHTML += item.email_usuario +=
+    espaco.innerHTML += mensagem.innerHTML + item.msg_usuario
 
     novoItem.appendChild(botaoDeleta(item.id))
 
     lista.appendChild(novoItem)
+  
 }
 
 function botaoDeleta(id){

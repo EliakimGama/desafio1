@@ -447,7 +447,76 @@ footer{
 	margin: 0 35px;
 }
 
-ul li{
 
-	font-size: large;
+
+.item {
+    list-style: none;
+    padding: 0.6em 2em;
+    background: #f4ffce;
+    border-radius: 10px;
+    margin: 0 0 1em;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    gap: 10em;
+    font-size: 20px;
+}
+
+
+.item strong {
+    border-radius: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    font-weight: 400;
+
+}
+
+
+
+.msg_usuario{
+	height: 20px;
+	margin-top: 500px;
+}
+
+#novoItem {
+	padding: 5px;
+	margin-top: 20px;
+	position: center;
+	width: 500px;
+	font-size: medium;
+	max-width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#msg_usuario {
+	padding: 5px;
+	margin-top: 10px;
+	position: center;
+	width: 500px;
+	font-size: medium;
+	max-width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+}
+
+#cadastrar{
+
+	margin-top: 20px;
+	background-color: #7e2424; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 8px;
 }
