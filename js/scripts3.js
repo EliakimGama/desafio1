@@ -20,9 +20,7 @@ form.addEventListener("submit", (evento) => {
     }
 
     criaElemento(itemAtual)
-
     itens.push(itemAtual)
-
     localStorage.setItem("itens",JSON.stringify(itens))
 
     nome_usuario.value = ""
