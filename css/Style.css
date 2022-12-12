@@ -415,7 +415,7 @@ footer{
 	width: 100%;
 	position: center;
 	left: 100px;
-	height: 400px;
+	height: 1000px;
 	text-align: center;
 	margin-top: -250PX;
 }
@@ -459,7 +459,7 @@ footer{
     box-sizing: border-box;
     display: inline-flex;
     align-items: center;
-    gap: 10em;
+    gap: 5em;
     font-size: 20px;
 }
 
@@ -469,13 +469,11 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 40px;
+    width: 500px;
+    height: 30px;
     font-weight: 400;
 
 }
-
-
 
 .msg_usuario{
 	height: 20px;
@@ -510,7 +508,7 @@ footer{
 #cadastrar{
 
 	margin-top: 20px;
-	background-color: #7e2424; /* Green */
+	background-color: #5f0000;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -519,4 +517,28 @@ footer{
     display: inline-block;
     font-size: 16px;
 	border-radius: 8px;
+}
+
+#cadastrar:hover{
+
+	background-color: #972727; /* Green */
+ 
+}
+
+
+.item button{
+	background-color: #ff0606;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 8px;
+}
+
+
+.table-bordered th:nth-child(2){
+	text-align:unset;	
 }
