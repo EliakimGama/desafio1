@@ -44,12 +44,15 @@ function criaElemento(item) {
     novoItem.appendChild(botaoDeleta(item.id))
 
     lista.appendChild(novoItem)
+
 }
 
 
 function botaoDeleta(id) {
     const elementoBotao = document.createElement("button")
     elementoBotao.innerText = "Remover"
+
+    onclick="return confirm('Deseja realmente excluir?')"
 
     elementoBotao.addEventListener("click", function() {
         deletaElemento(this.parentNode, id)
