@@ -6,6 +6,7 @@ itens.forEach( (elemento) => {
     criaElemento(elemento)
 })
 
+//Pega os valores que estão nos campos do formulários após apertar o botão de "enviar", depois limpa os campos
 form.addEventListener("submit", (evento) => {
     evento.preventDefault()
 
@@ -32,30 +33,34 @@ form.addEventListener("submit", (evento) => {
 }) 
 
 function criaElemento(item){
+
+    //adiciona os itens na lista
     const novoItem = document.createElement('li')
     novoItem.classList.add("item")
 
-    const nome= document.createElement('nome')
-    nome.innerText = ("Nome: ")
-
-    const mensagem = document.createElement('mensagem2')
-    mensagem.innerText = ("Mensagem: ")
-
-    const email= document.createElement('email')
-    email.innerText = ("Email:  ")
-
-    const espaco= document.createElement('espaco')
-    espaco.innerText = ("--------------")
-
+    //deixa o nome em negrito
     const numeroItem = document.createElement('strong')
     numeroItem.innerHTML = item.nome_usuario
 
-    numeroItem.dataset.id = item.id
+
+    //cria um texto "Mensagem" para ficar antes da mensagem
+    const mensagem = document.createElement('mensagem2')
+    mensagem.innerText = ("----------Mensagem: ")
+
+    //cria um texto "Email:" para ficar antes do email
+    const email= document.createElement('email')
+    email.innerText = ("Email:  ")  
+
+    //cria um texto "-------------"" para separar o email e a mensagem
+    //const espaco= document.createElement('p')
+    //espaco.innerHTML = ("---------------------")
+
+    //numeroItem.dataset.id = item.id
     novoItem.appendChild(numeroItem)
   
     
-    nome.innerHTML += novoItem.innerHTML += espaco.innerHTML += email.innerHTML += item.email_usuario +=
-    espaco.innerHTML += mensagem.innerHTML + item.msg_usuario
+    novoItem.innerHTML += email.innerHTML += item.email_usuario +=
+    mensagem.innerHTML + item.msg_usuario
 
     novoItem.appendChild(botaoDeleta(item.id))
 
