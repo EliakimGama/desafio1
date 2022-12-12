@@ -6,8 +6,6 @@ itens.forEach( (elemento) => {
     criaElemento(elemento)
 } )
 
-
-
 form.addEventListener("submit", (evento) => {
     evento.preventDefault()
 
